@@ -1,24 +1,26 @@
-# vonkelveld.com
+# Vonkelveld website
 
-The public website and press kit for **Vonkelveld**, a deterministic god-sim on Steam Early Access.
+The public game, company, support, privacy and press pages for **Vonkelveld**,
+published by **Software MoosS (Pty) Ltd**, South Africa.
 
-- Site — https://vonkelveld.com
-- Press & creator kit — https://vonkelveld.com/press/
-- Steam — https://store.steampowered.com/app/4846840/
-- Contact — info@vonkelveld.com
+- GitHub Pages: https://bridgettegraham.github.io/vonkelveld-site/
+- Intended custom domain: https://vonkelveld.com/ (requires DNS and HTTPS setup)
+- Contact: info@vonkelveld.com
+- Steam: https://store.steampowered.com/app/4846840/
 
-## ⚠ Every file here is GENERATED — do not hand-edit
+## Generated sources
 
-Both pages are built from templates in the game's own (private) repository by
-`scripts/build-press-kit.py`, which reads the screenshots, the eleven scenario premises and
-the version number straight from the game's source of truth. Editing the HTML here would be
-overwritten by the next build, and would silently drift from the game.
+These pages and this README are generated from templates in the game's private
+repository by `scripts/build-press-kit.py`. Edit those sources and regenerate;
+copy `target/site/` into this repository and publish `main`.
 
-To change the site, edit the templates in the game repo and re-run the generator, then copy
-`target/site/` over this repository.
+Each HTML page contains its own styles and images. The home and press pages use
+Google Fonts; the home page also embeds a YouTube trailer. Company, support and
+privacy pages use system fonts and have no embedded third-party services.
 
-Each page is one self-contained file with every image inlined, so there is no build step, no
-asset pipeline and no dependency here — just static hosting.
+GitHub Pages serves `main` from the repository root. Preserve any domain CNAME
+file during regeneration. Custom-domain setup is documented in the game repo's
+`docs/app-store/website.md`; preserve the domain's email records.
 
-© Software MoosS. The screenshots, logo and key art may be reproduced in coverage of
-Vonkelveld; see the press kit for the full permission statement.
+© 2026 Software MoosS (Pty) Ltd. The press kit states the permission for using game
+screenshots and art in coverage of Vonkelveld.
