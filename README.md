@@ -3,24 +3,25 @@
 The public game, company, support, privacy and press pages for **Vonkelveld**,
 published by **Software MoosS (Pty) Ltd**, South Africa.
 
-- GitHub Pages: https://bridgettegraham.github.io/vonkelveld-site/
-- Intended custom domain: https://vonkelveld.com/ (requires DNS and HTTPS setup)
+- Primary address: https://vonkelveld.com/
+- Press and downloads: https://vonkelveld.com/press/
 - Contact: info@vonkelveld.com
 - Steam: https://store.steampowered.com/app/4846840/
 
 ## Generated sources
 
-These pages and this README are generated from templates in the game's private
-repository by `scripts/build-press-kit.py`. Edit those sources and regenerate;
-copy `target/site/` into this repository and publish `main`.
+These pages, public assets, CNAME and this README are generated in the game's
+private repository by scripts/build-press-kit.py. Edit its templates and
+regenerate; publish only target/site/ to this repository's main branch.
+No game source or private documentation belongs here.
 
-Each HTML page contains its own styles and images. The home and press pages use
-Google Fonts; the home page also embeds a YouTube trailer. Company, support and
-privacy pages use system fonts and have no embedded third-party services.
+GitHub Pages serves main from the repository root. Keep CNAME containing
+vonkelveld.com. The old https://bridgettegraham.github.io/vonkelveld-site/ address
+redirects when the custom domain is active.
 
-GitHub Pages serves `main` from the repository root. Preserve any domain CNAME
-file during regeneration. Custom-domain setup is documented in the game repo's
-`docs/app-store/website.md`; preserve the domain's email records.
+Home and press use Google Fonts. The trailer is an external YouTube link, with
+no embedded player. Company, support and privacy use system fonts. Screenshots,
+art and the press ZIP are hosted here. There are no analytics scripts or forms.
 
-© 2026 Software MoosS (Pty) Ltd. The press kit states the permission for using game
-screenshots and art in coverage of Vonkelveld.
+© 2026 Software MoosS (Pty) Ltd. See assets/ASSET-LICENCE.txt for permission to
+use the game screenshots and art in coverage.
